@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="scss/main.css">
 
     <meta name="theme-color" content="#2c2d32">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -21,24 +21,49 @@
 
     <header class="header">
         <div class="container">
-            <div class="container__row"></div>
-        </div>
-        <div class="container">
-            <div class="container__row">
-                <a href="/" class="header__logo">TurboJet - Газовое паяльное оборудование</a>
-
-                <nav class="main-menu">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item"><a href="/">Каталог</a></li>
-                        <li class="main-menu__item"><a href="/">Новости</a></li>
-                        <li class="main-menu__item"><a href="/">О компании</a></li>
-                        <li class="main-menu__item"><a href="/">Доставка</a></li>
-                        <li class="main-menu__item"><a href="/">Контакты</a></li>
-                    </ul>
-                </nav>
-                
+            <div class="header__wrapper header__wrapper--top">
+                <div class="header__block">
+                    <i class="fas fa-map-marker-alt"></i> 107996, Россия, Москва, Кузнецкий мост, дом 21/5
+                </div>
+                <div class="header__block">
+                    <span><i class="fas fa-envelope-open"></i> info@radoil.ru</span>
+                    <span><i class="fas fa-phone-alt"></i> +7 495 223-34-36</span>
+                    <span style="color: #ff882e;">ПОЗВОНИТЕ МНЕ</span>
+                </div>
             </div>
         </div>
+        <div class="container">
+                <div class="header__wrapper">
+                    <a href="/" class="header__logo">TurboJet - Газовое паяльное оборудование</a>
+                    <div class="header__tagline">
+                        Официальный интернет-магазин <br>паяльного оборудования TurboJet
+                    </div>
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item"><a href="/">Каталог</a></li>
+                            <li class="main-menu__item"><a href="/">Новости</a></li>
+                            <li class="main-menu__item"><a href="/">О компании</a></li>
+                            <li class="main-menu__item"><a href="/">Доставка</a></li>
+                            <li class="main-menu__item"><a href="/">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div>&nbsp;&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="search-icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
     </header>
     <main class="main">
         <div class="container">
@@ -54,8 +79,6 @@
             </div>
         </div>
     </footer>
-
-
 
 
 <script>window.jQuery || document.write('<script src="js/jquery-3.4.1.min.js"><\/script>')</script>
