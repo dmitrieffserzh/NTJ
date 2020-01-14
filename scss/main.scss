@@ -1,0 +1,104 @@
+/*
+  DMITRIEFFSERZH
+*/
+
+@import "compass";
+@import "compass/reset";
+
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #2c2d32;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #8b8b96;
+}
+
+
+/* HEADER
+===================================================================================================================== */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  width: 100%;
+  @include background(rgba(44, 45, 50, 0.95));
+  &:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    @include background(linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0)));
+    content: "";
+  }
+  &__logo {
+    display: inline-block;
+    float: left;
+    height: 2.5rem;
+    width: 9rem;
+    @include background(url('../img/logo_white.png') no-repeat left center / contain);
+    @include hide-text(-9999px)
+  }
+}
+/* MAIN
+===================================================================================================================== */
+.main {
+
+}
+/* FOOTER
+===================================================================================================================== */
+.footer {
+
+}
+/* GRID
+===================================================================================================================== */
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: calc(1280px - 2rem);
+  &__row {
+    margin: 0 -1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* MAIN MENU
+===================================================================================================================== */
+.main-menu {
+  display: inline-block;
+  &__list {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+  &__item {
+    float: left;
+    & a {
+      display: block;
+      padding: 0 1rem;
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+
+}

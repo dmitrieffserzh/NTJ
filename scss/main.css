@@ -1,265 +1,148 @@
-/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+  DMITRIEFFSERZH
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  line-height: 1;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+ol, ul {
+  list-style: none;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
-fieldset {
-  border: 0;
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #2c2d32;
   padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #8b8b96;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+/* HEADER
+===================================================================================================================== */
+.header {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  width: 100%;
+  background: rgba(44, 45, 50, 0.95);
+}
+.header:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0));
+  content: "";
+}
+.header__logo {
+  display: inline-block;
+  float: left;
+  height: 2.5rem;
+  width: 9rem;
+  background: url("../img/logo_white.png") no-repeat left center/contain;
+  text-indent: 110%;
   white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  overflow: hidden;
+  text-transform: capitalize;
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
+/* MAIN
+===================================================================================================================== */
+/* FOOTER
+===================================================================================================================== */
+/* GRID
+===================================================================================================================== */
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: calc(1280px - 2rem);
+}
+.container__row {
+  margin: 0 -1rem;
+}
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
+/* MAIN MENU
+===================================================================================================================== */
+.main-menu {
+  display: inline-block;
+}
+.main-menu__list {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0;
   margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  font-size: 0;
 }
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
+.main-menu__item {
+  float: left;
 }
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.main-menu__item a {
+  display: block;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #fff;
 }
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
