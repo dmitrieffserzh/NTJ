@@ -297,6 +297,89 @@ body {
   background: #c35716;
 }
 
+.add-to-card {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.add-to-card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSLQodC70L7QuV8xIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjUgMjUiIGZpbGw9IiNmZmYiPgo8cmVjdCB4PSI1IiB5PSIxMS45IiB3aWR0aD0iMTUiIGhlaWdodD0iMS4yIi8+CjxyZWN0IHg9IjUiIHk9IjExLjkiIHRyYW5zZm9ybT0ibWF0cml4KC0xLjgzNjk3MGUtMTYgMSAtMSAtMS44MzY5NzBlLTE2IDI0Ljk2NDkgLTMuNTEwOTA0ZS0wMikiICB3aWR0aD0iMTUiIGhlaWdodD0iMS4yIi8+Cjwvc3ZnPgo=");
+  background-size: 97%;
+}
+.add-to-card:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  background: #ff6000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all .2s ease;
+}
+.add-to-card:hover:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  box-shadow: 0 0 0.5rem 0 rgba(117, 65, 42, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 102, 26, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(236, 102, 26, 0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 102, 26, 0.4);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(236, 102, 26, 0.4);
+    box-shadow: 0 0 0 0 rgba(236, 102, 26, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(236, 102, 26, 0);
+    box-shadow: 0 0 0 10px rgba(236, 102, 26, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(236, 102, 26, 0);
+    box-shadow: 0 0 0 0 rgba(236, 102, 26, 0);
+  }
+}
+/* PRODUCT
+===================================================================================================================== */
+.product {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  margin: 1rem;
+}
+.product__image {
+  background: #212327;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.product__image img {
+  width: 100%;
+}
+
 /* MAIN MENU
 ===================================================================================================================== */
 .main-menu {
