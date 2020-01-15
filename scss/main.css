@@ -274,9 +274,9 @@ body {
 /* BUTTONS
 ===================================================================================================================== */
 .btn {
-  border: none;
+  border: 2px Solid #c35716;
   display: inline-block;
-  background: #ff6000;
+  background: transparent;
   padding: .5rem 1rem;
   border-radius: 1.5rem;
   line-height: 1.5;
@@ -294,7 +294,7 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  background: #ec5009;
+  background: #c35716;
 }
 
 /* MAIN MENU
